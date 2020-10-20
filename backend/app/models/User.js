@@ -2,7 +2,8 @@
 module.exports = (sequelize, DataTypes) => {
   const User = sequelize.define('User', {
     name: DataTypes.STRING,
-    username: DataTypes.STRING
+    username: DataTypes.STRING,
+    superpower: DataTypes.STRING
   }, {});
   User.associate = function(models) {
     // associations can be defined here

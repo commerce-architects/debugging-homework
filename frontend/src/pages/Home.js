@@ -69,7 +69,7 @@ class Home extends Component {
     editRow = user => {
 
         this.setState({ 
-            currentUser: { id: user.id, name: user.name, username: user.username }
+            currentUser: { id: user.id, name: user.name, username: user.username, superpower: user.superpower }
         });
 
         this.setEditing(true);

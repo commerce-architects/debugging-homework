@@ -7,6 +7,7 @@ const UserTable = props => (
             <tr>
                 <th>Name</th>
                 <th>Username</th>
+                <th>Super Power</th>
                 <th>Actions</th>
             </tr>
         </thead>
@@ -18,6 +19,7 @@ const UserTable = props => (
                     <tr key={user.id}>
                         <td>{user.name}</td>
                         <td>{user.username}</td>
+                        <td>{user.superpower}</td>
                         <td className="center-align">
                             <button 
                                 className="waves-effect waves-light btn-small"

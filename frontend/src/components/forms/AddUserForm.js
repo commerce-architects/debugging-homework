@@ -2,7 +2,7 @@ import React, { useState } from 'react';
 
 const AddUserForm = props => {
 
-    const initialFormState = { name: '', username: ''};
+    const initialFormState = { name: '', username: '', superpower: ''};
     const [user, setUser] = useState(initialFormState);
 
     const handleInputChange = event => {
@@ -50,7 +50,20 @@ const AddUserForm = props => {
                         <label htmlFor="username">Username</label>
                     </div>
                 </div>
-                
+
+                <div className="row">
+                    <div className="input-field col s12">
+
+                        <input
+                            type="text"
+                            name="superpower"
+                            value={user.superpower}
+                            onChange={handleInputChange}
+                            required />
+                        <label htmlFor="superpower">Super Power</label>
+                    </div>
+                </div>
+
                 <div className="row">
                     <div className="input-field col s12">
 

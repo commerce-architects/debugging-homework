@@ -16,9 +16,9 @@ module.exports = {
     },
 
     create(req, res) {
-        const { name, username } = req.body;
+        const { name, username, superpower } = req.body;
         User.create({
-            name, username
+            name, username, superpower
         })
         .then(user => res.status(201).json({
             error: false,
@@ -35,10 +35,10 @@ module.exports = {
     update(req, res) {
         const user_id = req.params.id;
 
-        const { name, username } = req.body;
+        const { name, username, superpower } = req.body;
 
         User.update({
-            name, username
+            name, username, superpower
         }, {
             where: {
                 id: user_id
