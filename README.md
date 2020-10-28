@@ -2,7 +2,8 @@
 
 This repository contains the broken application to use for testing candidates debugging skills.
 
-## Build Infomration
+## Build Information
 
-To run the application simply execute the run.sh script.
+To install the application, run 'npm install' from the backend and frontend directories.
+To run the application, run 'npm start' from the frontend and backend directories
 
